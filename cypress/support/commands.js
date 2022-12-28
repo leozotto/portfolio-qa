@@ -49,7 +49,6 @@ Cypress.Commands.add('bottomNextInsurantData', () => {
 // mapping fields in Insurant Data
 Cypress.Commands.add('firstName', (firstName) => {
     cy.get("#firstname").should('be.visible').type(firstName)
-
 })
 
 Cypress.Commands.add('lastName', (lastName) => {
@@ -60,40 +59,41 @@ Cypress.Commands.add('dateOfBirth', (dateOfBirth) => {
     cy.get("#birthdate").should('be.visible').type(dateOfBirth)
 })
 
-Cypress.Commands.add('gender', (gender) => {
-    cy.get("#gendermale").should('be.visible').type()
+Cypress.Commands.add('gender', () => {
+    cy.get("#gendermale").should('be.visible').check()
 })
 
+
 Cypress.Commands.add('streetAddress', (streetAddress) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#streetaddress").should('be.visible').type(streetAddress)
 })
 
 Cypress.Commands.add('country', (country) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#country").should('be.visible').type(country)
 })
 
 Cypress.Commands.add('zipCode', (zipCode) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#zipcode").should('be.visible').type(zipCode)
 })
 
 Cypress.Commands.add('city', (city) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#city").should('be.visible').type(city)
 })
 
 Cypress.Commands.add('occupation', (occupation) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#occupation").should('be.visible').type(occupation)
 })
 
-Cypress.Commands.add('hobbies', (hobbies) => {
-    cy.get("#").should('be.visible').type()
-})
+// Cypress.Commands.add('hobbies', (hobbies) => {
+//  cy.get("#").should('be.visible').type()
+// })
 
 Cypress.Commands.add('website', (website) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#website").should('be.visible').type(website)
 })
 
 Cypress.Commands.add('picture', (picture) => {
-    cy.get("#").should('be.visible').type()
+    cy.get("#picture").should('be.visible').type(picture)
 })
 
 Cypress.Commands.add('bottomNextProductData', () => {

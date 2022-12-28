@@ -33,6 +33,19 @@ describe('Enter Vehicle Data', () => {
         cy.licensePlateNumber("license") //random license
         cy.annualMileage(randomAnnualMileage) //range 100 - 100000
         cy.bottomNextInsurantData()
+
+        // part 2
+        cy.firstName("leo")
+        cy.lastName("zotto")
+        cy.dateOfBirth("09/28/1998")
+        // cy.gender()
+        cy.streetAddress("asdasdas")
+        cy.country("asdasd")
+        cy.zipCode("83045000")
+        cy.city("asdads")
+        cy.occupation("adsdasd")
+        cy.website("github.com/leozotto/")
+        cy.picture(".gitconfig")
     })
 
 })
